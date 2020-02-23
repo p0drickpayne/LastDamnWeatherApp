@@ -72,6 +72,7 @@
 				950CEF0E240024AF002C85E5 /* SceneDelegate.swift */,
 				950CEF10240024AF002C85E5 /* HomeViewController.swift */,
 				950CEF12240024AF002C85E5 /* SecondViewController.swift */,
+				9592600B2402E960007E5DC6 /* CustomCell.swift */,
 				950CEF14240024AF002C85E5 /* Main.storyboard */,
 				950CEF17240024B3002C85E5 /* Assets.xcassets */,
 				950CEF2A2401DFEB002C85E5 /* city.list.json */,
@@ -80,7 +81,6 @@
 				950CEF222400253F002C85E5 /* WeatherAPI.swift */,
 				950CEF2424002551002C85E5 /* GetWeather.swift */,
 				950CEF2624003E62002C85E5 /* Gradient.swift */,
-				9592600B2402E960007E5DC6 /* CustomCell.swift */,
 			);
 			path = WeatherApp;
 			sourceTree = "<group>";

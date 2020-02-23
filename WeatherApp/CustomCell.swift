@@ -10,6 +10,8 @@ import UIKit
 
 class CustomCell: UITableViewCell {
 
-
-
+    @IBOutlet weak var cityNameLabel: UILabel!
+    
+    @IBOutlet weak var favBtn: UIButton!
+    
 }
