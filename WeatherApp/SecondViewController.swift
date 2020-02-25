@@ -93,8 +93,8 @@ class SecondViewController: UIViewController/*,UITableViewDelegate, UITableViewD
         filteredCities = myCities
         
         Background.gradient(myView: self.view!)
-        //myTableView.delegate = self
-        //myTableView.dataSource = self
+        myTableView.delegate = self
+        myTableView.dataSource = self
         
         
     }
@@ -113,21 +113,25 @@ extension SecondViewController : UISearchBarDelegate {
     }
     
 }
-/*extension SecondViewController : UITableViewDataSource, UITableViewDelegate {
+extension SecondViewController : UITableViewDataSource, UITableViewDelegate {
 
 func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-    
-    if (filteredCities.count < 16) {
     return filteredCities.count
-    } else {return 16}
+    /*if (filteredCities.count < 16) {
+    return filteredCities.count
+    } else {return 16}*/
 }
 
 func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-    let cell = tableView.dequeueReusableCell(withIdentifier: "cellSearch", for: indexPath)
     
+    let cityName = filteredCities[indexPath.row]
+    let cell = tableView.dequeueReusableCell(withIdentifier: "searchCell") as! CustomCell
+    
+    
+    cell.setCell(cityName: cityName)
     // Configure the cell’s contents.
-    cell.textLabel!.text = filteredCities[indexPath.row]
-        
+    //cell.textLabel!.text = filteredCities[indexPath.row]
+    
     return cell
 }
-}*/
+}

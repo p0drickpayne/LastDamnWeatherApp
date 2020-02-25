@@ -11,7 +11,11 @@ import UIKit
 class CustomCell: UITableViewCell {
 
     @IBOutlet weak var cityNameLabel: UILabel!
-    
     @IBOutlet weak var favBtn: UIButton!
+    
+    
+    func setCell(cityName : String) {
+        cityNameLabel.text = cityName
+    }
     
 }
